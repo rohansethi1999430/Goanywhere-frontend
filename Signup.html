@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+  }
+  ul li{
+    display: inline-block;
+  }
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #transparent;
+    transition: 0.6s ease;
+  }
+  ul li a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  ul li.active a{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .ul1{
+      padding-left:10px ;
+      float: left;
+  }
+
+  .main{
+    max-width: 1400px;
+    margin: auto;
+  }
+  .button{
+    position: absolute;
+    padding-top: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    border: 1px solid #fff;
+    padding: 10px,30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    transition: .06s ease;
+    font-family: Arial;
+    /* box-sizing: border-box; */
+  }
+  .btn:hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+  #bg-img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+body, html {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: relative;
+  max-width: 35%;
+  margin: 0 auto 200px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  margin: 20px 25%;
+}
+
+.btn1:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+  <div id="bg-img"></div>
+  <header>
+    <div class="main">
+      <div class="logo">
+        <img src="logo1.png"
+
+
+
+      </div>
+        <ul>
+          <li ><a href="Index.html">Home</a></li>
+          <li ><a href="Service.html">Holidays</a></li>
+          <li ><a href="About.html">Login</a></li>
+          <li ><a href="Others.html">Others</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li class="active"><a href="Signup.html">Sign Up</a></li>
+        </ul>
+
+
+    </div>
+      <form action="/action_page.php" class="container">
+        <h1>Sign Up</h1>
+        <ul class="ul1">
+          <li><label for="userid">User id:</label></li>
+          <li><input type="text" name="userid" size="12" /></li><br>
+          <li><label for="passid">Password:</label></li>
+          <li><input type="password" name="passid" size="12" /></li><br>
+          <li><label for="username">Name:</label></li>
+          <li><input type="text" name="username" size="50" /></li><br>
+          <li><label for="address">Address:</label></li>
+          <li><input type="text" name="address" size="50" /></li><br>
+          <li><label for="country">Country:</label></li>
+          <li><select name="country">
+          <option selected="" value="Default">(Please select a country)</option>
+          <option value="AF">Australia</option>
+          <option value="AL">Canada</option>
+          <option value="DZ">India</option>
+          <option value="AS">Russia</option>
+          <option value="AD">USA</option>
+          </select></li><br>
+          <li><label for="zip">ZIP Code:</label></li>
+          <li><input type="text" name="zip" /></li><br>
+          <li><label for="email">Email:</label></li>
+          <li><input type="text" name="email" size="50" /></li><br>
+          <li><label id="gender">Sex:</label></li>
+          <li><input type="radio" name="sex" value="Male" /><span>Male</span></li>
+          <li><input type="radio" name="sex" value="Female" /><span>Female</span></li><br><br>
+          <li><label>Language:</label></li><br><br>
+          <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+          <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li><br><br>
+          <li><label for="desc">About:</label></li>
+          <li><textarea name="desc" id="desc"></textarea></li>
+        </ul>
+        <button type="submit" class="btn1">Sign Up</button>
+      </form>
+
+    </header>
+
+
+
+</body>
+</html>

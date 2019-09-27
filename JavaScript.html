@@ -1,0 +1,90 @@
+<html>
+
+  <head>
+    <title>User-Defined Objects</title>
+    <script type="text/javascript">
+    function sayHello() {
+      alert("Hello bitch//")
+    }
+    function over() {
+      document.write("Mouse over")
+    }
+    function out() {
+      document.write("Mouse out")
+    }
+      var book=new Object();
+      book.subject="Perl";
+      book.author="Rohan Sethi";
+      var str = document.title;
+      function validateForm() {
+        var x=document.forms["myForm"]["fname"].value;
+        if(x==""){
+          alert("Name must be filled:-");
+          return false;}
+          var y=document.forms["myForm"]["eid"].value;
+          if(y==""){
+            alert("Email-id must be filled:-");
+            return false;
+
+          }
+          var z=document.forms["myForm"]["add"].value;
+          if(z==""){
+            alert("Address must be filled:-");
+            return false;
+
+          }
+          var a=document.forms["myForm"]["pn"].value;
+          if(a==""){
+            alert("Phone Number must be filled:-");
+            return false;
+
+          }
+
+        }
+      
+
+    </script>
+
+
+  </head>
+  <body>
+    <form name="myForm"onsubmit="return validateForm()"method="post">
+      Name:<input type ="text" name="fname">
+      Email-id:<input type ="text" name="eid">
+      Address:<input type ="text" name="add">
+      Phone Number:<input type ="text" name="pn">
+      <input type="submit" value="Submit">
+    </form>
+    <p>Bring your mouse inside the division to see out put///</p>
+
+    <script type="text/javascript">
+      document.write("Book name is :- "+book.subject +"<br>");
+      document.write("Book author is :- "+book.author + "<br>");
+      document.write(str);
+    </script>
+    <button type="button" name="button" onclick="sayHello()">Click me to display date and time.</button>
+    <p id="demo"> hey</p>
+    <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='2.jpeg'">Turn on the light</button>
+
+<img id="myImage" src="1.jpg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='1.jpeg'">Turn off the light</button>
+
+
+</body>
+</html>
+
+
+
+  </body>
+</html>

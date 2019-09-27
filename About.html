@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+  }
+  ul li{
+    display: inline-block;
+  }
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #transparent;
+    transition: 0.6s ease;
+  }
+  ul li a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  ul li.active a{
+    background-color: #fff;
+    color: #000;
+  }
+  .main{
+    max-width: 1400px;
+    margin: auto;
+  }
+  .button{
+    position: absolute;
+    padding-top: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    border: 1px solid #fff;
+    padding: 10px,30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    transition: .06s ease;
+    font-family: Arial;
+    box-sizing: border-box;
+
+
+  }
+  .btn:hover{
+    background-color: #fff;
+    color: #000;
+
+  }
+
+  header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(4.jpg);
+
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("img_nature_wide.jpg");
+
+  min-height: 380px;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn1:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="main">
+      <div class="logo">
+        <img src="logo1.png"
+
+
+
+      </div>
+        <!-- a id="link" href="https://www.google.com"></a> -->
+        <ul>
+          <li ><a href="Index.html">Home</a></li>
+          <li ><a href="Service.html">Holidays</a></li>
+          <li class="active"><a href="About.html">Login</a></li>
+          <li ><a href="Others.html">Others</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+        </ul>
+
+
+    </div>
+    <div class="bg-img">
+      <form action="/action_page.php" class="container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn1">Login</button>
+      </form>
+    </div>
+
+    </header>
+
+
+
+</body>
+</html>

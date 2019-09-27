@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class complex {
+    int real,imag;
+    void read(){
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter The Complex Number Please:- ");
+        System.out.println("Enter The Real part of The  Number");
+        real=s.nextInt();
+        System.out.println("Enter The Complex part of The Number :-");
+        imag=s.nextInt();
+        System.out.println("The Number You Entered Is :- "+real+" + i "+imag);
+    }
+    void disp(){
+        System.out.println("Complex Number is :- "+real+" + i "+imag);
+    }
+    complex addint(int a,complex ob){
+        ob.real=a+ob.real;
+       return ob;
+    }
+    complex add(complex a,complex b){
+        a.real=a.real+b.real;
+        a.imag=a.imag+b.imag;
+        return a;
+    }
+
+}
+class demo{
+    public static void main(String args[]) {
+        int g=1,f;
+        System.out.println("Complex Menu :- ");
+        System.out.println("Press 1 to add an integer to the Complex Number :");
+        System.out.println("Press 2 to add two complex number :");
+        System.out.println("Press 3 To Exit :- ");
+        System.out.println("Enter Your Choice :- ");
+        Scanner s1=new Scanner(System.in);
+        f=s1.nextInt();
+
+        while (g !=0) {
+            switch (f){
+                case 1:
+                    complex c1 = new complex();
+                    complex c4 = new complex();
+                    c1.read();
+                    System.out.println("Enter The Integer to be added :- ");
+                    int a=s1.nextInt();
+                    c4=c1.addint(a,c1);
+                    c4.disp();
+                    break;
+                case 2:
+                    complex c3 = new complex();
+                    complex c2=new complex();
+                    complex c5 = new complex();
+                    c2.read();
+                    c3.read();
+                    c5=c2.add(c2,c3);
+                    c5.disp();
+                    break;
+                case 3:
+                    g=0;
+                    break;
+            }
+
+        }
+    }
+}

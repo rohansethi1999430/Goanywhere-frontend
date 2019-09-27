@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic ;
+  box-sizing: border-box;
+}
+header{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../2.jpg);
+
+  height: 100vh;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div > .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%
+}
+
+div > .fa:hover {
+    opacity: 0.7;
+}
+
+div > .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+div > .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+div > .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+div > .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+div > .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+#head {
+  text-align: center;
+  font-size: 100px;
+  padding-top: 40vh;
+  color: white;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid #transparent;
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+.main{
+  max-width: 1400px;
+  margin: auto;
+}
+.button{
+  position: absolute;
+  padding-top: 60vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn{
+  border: 1px solid #fff;
+  padding: 10px,30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+  transition: .06s ease;
+  font-family: Arial;
+  box-sizing: border-box;
+
+
+}
+.btn:hover{
+  background-color: #fff;
+  color: #000;
+
+}
+
+#link{
+  margin: 100px;
+  padding: 100px 100px;
+  background-image: url(../1.jpg);
+  width: 200px;
+  height: 200px;
+  align:"right";
+  background-size: cover;
+  background-position:center;
+  align-content: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      li{
+        float: left;
+
+      }
+      li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover{
+        background-color: #111;
+      }
+      .dropdown{
+        position: relative;
+        display:inline;
+      }
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>  
+       <li> <a class="active" href="#home"> Home</a></li>  
+        <li> <a  href="1.html"> News</a></li> 
+        <li> <a  href="2.html"> Contact</a></li>
+        <li> <a  href="index.html"> About</a></li>   
+      </ul>
+      <h2> Hoverable Dropdown<h2>
+  		<p>Move the mouse over the text below to open the dropdown content.</p>
+<div class="dropdown">
+  <span>Mouse over me!!!!!!</span>
+
+  <div class="dropdown-content">
+
+    <p>Hello world</p>
+  </div>
+
+</div>
+
+
+
+
+  </body>
+</html>
